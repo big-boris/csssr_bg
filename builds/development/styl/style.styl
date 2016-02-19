@@ -1,0 +1,188 @@
+@import 'colors.styl'
+body
+    overflow-x hidden
+    min-width 1000px
+    background-color general_bgcolor
+    color main_txtcolor
+    font-family PTSansBold
+    font-size 22px
+
+.anketa
+    width 1000px
+    margin 0 auto
+
+.wrapp
+    background url('/img/bg_content.jpg') repeat
+    position relative
+    margin 0 auto
+    padding 0 47px
+    z-index 0
+    &:after
+        content '.'
+        width 0
+        height 0
+        visibility hidden
+        display block
+        clear both
+        position relative
+        font-size 0
+        line-height 0px
+
+.clearfix
+    &:after
+        content '.'
+        width 0
+        height 0
+        visibility hidden
+        display block
+        clear both
+        position relative
+        font-size 0
+        line-height 0px
+
+.head
+    padding-top 47px
+    &__logo
+        background url('/img/logo.png') center no-repeat
+        width 151px
+        height 35px
+        float left
+        padding-top 50px
+        p
+            font-size 10px
+            text-align center
+
+    &__stamp
+        background url('/img/stamp.png') center no-repeat
+        width 252px
+        height 106px
+        float right
+
+.case
+    padding-top 30px
+    margin 0 54px 50px 54px
+    &__title
+        background url('/img/case.png') center no-repeat
+        width 221px
+        height 118px
+        margin 0 auto 60px auto
+    .case-info
+        padding 10px 0px
+        &__label
+            padding-right 18px
+            vertical-align middle
+        &__text
+            font-family CourierNewReg
+            font-size 30px
+            color input_txtcolor
+            vertical-align bottom
+            margin 0px
+            padding 0px 15px 8px 15px
+            // padding-bottom 8px
+            border none
+            background url('/img/underline.png') no-repeat
+            background-position bottom center
+            background-size 100%
+            box-sizing border-box
+            -moz-box-sizing border-box
+            -webkit-box-sizing border-box
+            outline none
+            &_name
+                width 626px
+            &_birthday
+                width 613px
+            &_residence
+                width 576px
+            &_skype
+                width 693px
+            &_email
+                width 693px
+
+.graduate
+    margin 50px 0
+    &__link
+        color lnk_color
+        margin-right 33px
+        margin-left 8px
+    &__radio
+        display none
+        & + label
+            background url('/img/rb_unsel.png') 0 0 no-repeat
+            cursor pointer
+            padding-left 32px
+            margin-right 22px
+        &:checked
+            & + label
+                background url('/img/rb_sel.png') 0 0 no-repeat
+.practice
+    font-family PTSansReg
+    font-size 14px
+    margin 50px 0 14px 0
+    &__text
+        display inline-block
+        background url('/img/star_remark.png') 0 6px no-repeat
+        padding-left 22px
+        margin-top 14px
+        color remark_color
+        text-align justify
+        line-height 1.5
+
+.practical-skills
+    font-size 21px
+    color black
+    &__group
+        width 240px
+        display inline-block
+        padding 0 10px
+        vertical-align top
+    &__item
+        display none
+        & + label
+            display inline-block
+            background url('/img/chb_unsel.png') 0 -4px no-repeat
+            cursor pointer
+            padding-left 27px
+            line-height 1.6
+        &:checked
+            & + label
+                background url('/img/chb_sel.png') 0 -4px no-repeat
+.knowledge-js
+    margin-top 80px
+    position relative
+    &__title
+        margin-bottom 30px
+        padding-left 20px
+    span
+        display inline-block
+        font-size 13px
+        position absolute
+        &:nth-child(3)
+            left 20px
+        &:nth-child(4)
+            left 168px
+        &:nth-child(5)
+            width 210px
+            right 195px
+        &:nth-child(6)
+            right 18px
+
+.date
+    margin 70px 0
+    &__label
+        padding-left 10px
+        padding-right 18px
+        vertical-align middle
+    &__text
+        font-family CourierNewReg
+        font-size 30px
+        color input_txtcolor
+        vertical-align bottom
+        margin 0px
+        padding 0px 15px 8px 15px
+        border none
+        background url('/img/underline_date.png') no-repeat
+        background-position bottom left
+        box-sizing border-box
+        -moz-box-sizing border-box
+        -webkit-box-sizing border-box
+        outline none

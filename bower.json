@@ -1,0 +1,21 @@
+{
+  "name": "csssr_template",
+  "version": "1.0.0",
+  "homepage": "https://github.com/big-boris/csssr_template#readme",
+  "authors": [
+    "big-boris"
+  ],
+  "description": "Template test of csssr",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}

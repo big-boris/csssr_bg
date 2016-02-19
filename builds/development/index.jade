@@ -1,0 +1,117 @@
+-var pageTitle = "Анкета соискателя CSSSR"
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        title= pageTitle
+        link(rel="stylesheet" href="css/normalize.css")
+        link(rel="stylesheet" href="css/style.min.css")
+        link(rel="stylesheet" href="libs/jquery_ui_slider/jquery-ui.css")
+        //[if lt IE 9]>
+            <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script> <![endif]
+        script(src="libs/jquery/jquery.min.js")
+        script(src="libs/jquery_ui_slider/jquery-ui.js")
+        script(src="js/script.js")
+    body
+        .anketa
+            .wrapp
+                .head.clearfix
+                    .head__logo
+                        p Секретный архив учреждения
+                    .head__stamp
+                .case
+                    .case__title
+                    .case-info
+                        span.case-info__label Полное ФИО
+                        input.case-info__text.case-info__text_name(type='text', value='Демченко Борис Григорьевич')
+                    .case-info
+                        span.case-info__label Год рождения
+                        input.case-info__text.case-info__text_birthday(type='text', value='1981')
+                    .case-info
+                        span.case-info__label Место жительства
+                        input.case-info__text.case-info__text_residence(type='text', value='гп. Нахабино, Московская обл.')
+                    .case-info
+                        span.case-info__label Скайп
+                        input.case-info__text.case-info__text_skype(type='text', value='borisbg81@hotmail.com')
+                    .case-info
+                        span.case-info__label Почта
+                        input.case-info__text.case-info__text_email(type='text', value='b.g.demchenko@gmail.com')
+                    .graduate
+                        span.graduate__title Выпускник
+                        a.graduate__link(href='http://htmlacademy.ru/') htmlacademy.ru
+                        input.graduate__radio#graduate__radio_yes(name='graduate', type='radio', value='Да')
+                        label(for='graduate__radio_yes') Да
+                        input.graduate__radio#graduate__radio_no(name='graduate', type='radio', value='Нет', checked='checked')
+                        label(for='graduate__radio_no') Нет
+                    .practice
+                        span.practice__title Практические навыки
+                        span.practice__text
+                            | Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутсвие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантированно будете справляться.
+                    .practical-skills
+                        .practical-skills__group
+                            input.practical-skills__item#skills-bem(name='practical-skills', type='checkbox', value='Методология БЭМ', checked='checked')
+                            label(for='skills-bem') Методология БЭМ
+                            br
+                            input.practical-skills__item#skills-jquery(name='practical-skills', type='checkbox', value='jQuery', checked='checked')
+                            label(for='skills-jquery') jQuery
+                            br
+                            input.practical-skills__item#skills-grunt(name='practical-skills', type='checkbox', value='Использую GRUNT')
+                            label(for='skills-grunt') Использую GRUNT
+                            br
+                            input.practical-skills__item#skills-haml(name='practical-skills', type='checkbox', value='HAML')
+                            label(for='skills-haml') HAML
+                            br
+                            input.practical-skills__item#skills-sass(name='practical-skills', type='checkbox', value='SASS', checked='checked')
+                            label(for='skills-sass') SASS
+                            br
+                            input.practical-skills__item#skills-less(name='practical-skills', type='checkbox', value='LESS')
+                            label(for='skills-less') LESS
+                            br
+                            input.practical-skills__item#skills-coffees(name='practical-skills', type='checkbox', value='CoffeeScript')
+                            label(for='skills-coffees') CoffeeScript
+                        .practical-skills__group
+                            input.practical-skills__item#skills-jade(name='practical-skills', type='checkbox', value='Jade', checked='checked')
+                            label(for='skills-jade') Jade
+                            br
+                            input.practical-skills__item#skills-stylus(name='practical-skills', type='checkbox', value='Stylus', checked='checked')
+                            label(for='skills-stylus') Stylus
+                            br
+                            input.practical-skills__item#skills-angular(name='practical-skills', type='checkbox', value='Знаю (изучаю) Angular')
+                            label(for='skills-angular') Знаю (изучаю) Angular
+                            br
+                            input.practical-skills__item#skills-android(name='practical-skills', type='checkbox', value='Верстка под Android')
+                            label(for='skills-android') Верстка под Android
+                            br
+                            input.practical-skills__item#skills-ios(name='practical-skills', type='checkbox', value='Верстка под iOS')
+                            label(for='skills-ios') Верстка под iOS
+                            br
+                            input.practical-skills__item#skills-winph(name='practical-skills', type='checkbox', value='Верстка под Windows Phone')
+                            label(for='skills-winph') Верстка под Windows Phone
+                        .practical-skills__group
+                            input.practical-skills__item#skills-mailing(name='practical-skills', type='checkbox', value='Верстка рассылок')
+                            label(for='skills-mailing') Верстка рассылок
+                            br
+                            input.practical-skills__item#skills-adaptive(name='practical-skills', type='checkbox', value='Адаптивная верстка', checked='checked')
+                            label(for='skills-adaptive') Адаптивная верстка
+                            br
+                            input.practical-skills__item#skills-dropbox(name='practical-skills', type='checkbox', value='Использую Dropbox', checked='checked')
+                            label(for='skills-dropbox') Использую Dropbox
+                            br
+                            input.practical-skills__item#skills-gmail(name='practical-skills', type='checkbox', value='Использую Gmail', checked='checked')
+                            label(for='skills-gmail') Использую Gmail
+                            br
+                            input.practical-skills__item#skills-git(name='practical-skills', type='checkbox', value='Использую GitHub', checked='checked')
+                            label(for='skills-git') Использую GitHub
+                    .knowledge-js
+                        p.knowledge-js__title Уровень владения JavaScript
+                        .slider_ui#slider
+                        span Не владею
+                        span Использую готовые решения
+                        span Использую готовые решения и умею их переделывать
+                        span Пишу сложные скрипты
+                    .date
+                        span.date__label Дата заполнения
+                        input.date__text(type='text', value='19.02.2016')

@@ -1,0 +1,23 @@
+{
+  "name": "csssr_template",
+  "version": "1.0.0",
+  "description": "Template test of csssr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-boris/csssr_template.git"
+  },
+  "author": "big-boris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/big-boris/csssr_template/issues"
+  },
+  "homepage": "https://github.com/big-boris/csssr_template#readme",
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "gulp": "^3.9.0"
+  }
+}
